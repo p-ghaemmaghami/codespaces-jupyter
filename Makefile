@@ -6,7 +6,7 @@ test:
 	python -m pytest -vv --cov=cli --cov=notebooks test_*.py
 
 format:
-	black *.py
+	black ./*.py
 
 lint:
 	pylint --disable=R,C *.py src/*.py
